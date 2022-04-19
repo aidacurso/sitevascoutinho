@@ -1,0 +1,38 @@
+﻿@model sitevascoutinho.Models.Classes.Noticia
+
+@{
+	ViewData["Title"] = "Details";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="detalhes">
+	<h1 class="titulo">Detalhes</h1>
+
+	<div>
+		<h4 class="titulo">Notícia</h4>
+		<hr />
+		<dl class="row">
+			<dt class="titulo-right col-sm-2">
+				@Html.DisplayNameFor(model => model.Titulo)
+			</dt>
+			<dd class="col-sm-10">
+				@Html.DisplayFor(model => model.Titulo)
+			</dd>
+			<dt class="titulo-right col-sm-2">
+				@Html.DisplayNameFor(model => model.Corpo)
+			</dt>
+			<dd class="col-sm-10">
+				@Html.DisplayFor(model => model.Corpo)
+			</dd>
+			<dt class="titulo-right col-sm-2">
+				@Html.DisplayNameFor(model => model.Descricao)
+			</dt>
+			<dd class="col-sm-10">
+				<img class="detalhe-img"src="@Html.DisplayFor(model => model.Descricao)"/> 
+			</dd>
+			<dd class="col-sm-12 coluna12">
+				<a asp-action="Index" class="button-details"><i class="fa fa-arrow-left"></i> Voltar para lista</a><a asp-action="Edit" class="btn button-edit" asp-route-id="@Model?.Id"><i class="fa fa-edit"></i> Editar</a>
+			</dd>
+		</dl>
+	</div>
+</div>
+

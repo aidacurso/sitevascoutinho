@@ -1,0 +1,338 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    padding: 20px;
+    background-color: #645173 !important;
+    color: white !important;
+}
+
+@media (min-width: 768px) {
+    .col-md-4 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+}
+
+.bg-white {
+    --bs-bg-opacity: 1;
+    background-color: #9B7FB3 !important;
+    color: white !important;
+    border-radius: 10px;
+}
+
+.navbar-light .navbar-brand {
+    color: inherit;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #DEB5FF !important;
+}
+
+.border-top {
+    border-top: 1px solid ##DEB5FF !important;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #9B7FB3;
+    background-clip: border-box;
+    border: 1px solid #9B7FB3;
+    border-radius: 10px;
+}
+
+.card-img, .card-img-top {
+    border-top-left-radius: 10px;
+    width: -webkit-fill-available;
+    height: 179px;
+    object-fit: cover;
+    border-top-right-radius: 10px;
+}
+
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(235 235 235) !important;
+}
+
+.form-control:focus {
+    color: black;
+    background-color: #bf9cdb;
+    border-color: #ddb4fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(211 183 233 / 11%);
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #9b7fb3;
+    background-clip: padding-box;
+    border: 1px solid #bf9cdb;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 10px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.tox-tinymce {
+    border: 1px solid #ddb4fe !important;
+    border-radius: 10px !important;
+    box-shadow: none !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    flex-direction: column !important;
+    font-family: "Century Gothic" !important;
+    overflow: hidden !important;
+    position: relative !important;
+    visibility: inherit !important;
+}
+
+.tox .tox-menubar {
+    display: flex !important;
+    flex: 0 0 auto !important;
+    flex-shrink: 0 !important;
+    flex-wrap: wrap !important;
+    padding: 0 4px 0 4px !important;
+    background-color: #9b7fb3 !important;
+}
+
+.tox .tox-toolbar, .tox .tox-toolbar__overflow, .tox .tox-toolbar__primary {
+    background-color: #b595d1 !important;
+    display: flex !important;
+    flex: 0 0 auto !important;
+    flex-shrink: 0 !important;
+    flex-wrap: wrap !important;
+    padding: 0 0 !important;
+}
+
+.tox .tox-statusbar {
+    align-items: center;
+    background-color: #b595d1 !important;
+    border-top: 1px solid #ccc;
+    color: rgba(34,47,62,.7);
+    display: flex;
+    flex: 0 0 auto;
+    font-size: 12px;
+    font-weight: 400;
+    height: 18px;
+    overflow: hidden;
+    padding: 0 8px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #74A665 !important;
+    border-color: #74a665d9 !important;
+}
+
+    .btn-primary:hover {
+        color: black !important;
+        background-color: #B3F2A0 !important;
+        transition: 0.2s;
+        border-color: #b3f2a0d1 !important;
+    }
+
+.table {
+    --bs-table-bg: transparent;
+    --bs-table-accent-bg: transparent;
+    --bs-table-striped-color: #ddb4fe;
+    --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
+    --bs-table-active-color: #9b7fb3;
+    --bs-table-active-bg: rgba(0, 0, 0, 0.1);
+    --bs-table-hover-color: #9b7fb3;
+    --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    vertical-align: top;
+    border-color: #ddb4fe;
+}
+
+.borda {
+    width: auto;
+    height: auto;
+    border-color: black;
+    border-radius: 10px;
+    border: solid 1px;
+}
+
+.button-edit:hover {
+    background-color: #8d4e02;
+    transition: 0.4s;
+    color: #f4f4f4;
+}
+
+.button-delete:hover {
+    background-color: #bb0000;
+    transition: 0.4s;
+    color: #f4f4f4;
+}
+
+.button-success:hover {
+    background-color: darkgreen;
+    transition: 0.4s;
+    color: #f4f4f4;
+}
+.button-details:hover {
+    background-color: #00429d;
+    transition: 0.4s;
+    color: #f4f4f4;
+}
+
+.button-edit {
+    padding: 5px;
+    background-color: #db8e00;
+    border: solid 1px #bb6700;
+    border-radius: 5px;
+    color: white;
+    font-size: 100%;
+    display: block;
+    text-align: center;
+    margin: auto;
+    max-width: fit-content;
+}
+
+.button-delete {
+    padding: 5px;
+    background-color: #db0000;
+    border: solid 1px #c10000;
+    border-radius: 5px;
+    color: white;
+    font-size: 100%;
+    display: block;
+    text-align: center;
+    margin: auto;
+    max-width: fit-content;
+}
+
+.button-success {
+    padding: 5px;
+    background-color: green;
+    border: solid 1px darkgreen;
+    border-radius: 5px;
+    color: white;
+    font-size: 100%;
+    display: block;
+    text-align: center;
+    margin: auto;
+    max-width: fit-content;
+}
+.button-details {
+    padding: 5px;
+    background-color: #005cdb;
+    border: solid 1px #0050bf;
+    border-radius: 5px;
+    font-size: 100%;
+    display: block;
+    text-align: center;
+    color: white;
+    margin: auto;
+    max-width: fit-content;
+}
+
+.subtitle {
+    font-size: 10px;
+}
+
+.card {
+    min-height: 300px;
+    margin-top: 20px;
+}
+
+.card-org {
+    margin: 0 !important;
+    padding: 10px;
+}
+
+#ligar {
+    text-decoration: none;
+    color: white;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+a:active {
+    color: white;
+    text-decoration: none;
+}
+
+.titulo {
+    text-align: center;
+}
+
+.titulo-right {
+    text-align: right
+}
+
+.description img {
+    border-radius: 5px;
+    width: 100% !important;
+}
+
+.dropdown-item:hover {
+    background-color: #A484BD;
+}
+
+.dropdown-menu {
+    background-color: #C59FE3;
+}
+
+.card-title {
+    text-overflow: ellipsis;
+}
+
+.coluna12 a{
+display:inline-block;
+text-align:center;
+margin-right:2%;
+}
+.detalhes {
+    width: 100%;
+    padding: 0px 220px 0 220px;
+}
+.detalhe-img {
+    border-radius: 10px;
+    width: -webkit-fill-available;
+    height: auto;
+    object-fit: cover;
+
+}

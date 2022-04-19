@@ -1,0 +1,28 @@
+﻿@model IEnumerable<sitevascoutinho.Models.Classes.Noticia>;
+@{
+	ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+	<h1 class="display-4">Bem Vindo</h1>
+	<h3 class="display-6">Cras lacinia nisi eu odio tristique tempor.</h3>
+	<p />
+	<div class="card-group">
+		<div class="row">
+
+			@foreach (var noticia in Model)
+			{
+				<a href="/Noticias/Details/@noticia.Id" class="col-4"id="ligar">
+					<div  card-org">
+						<div class="card">
+							<img src="@Html.DisplayFor(c=> noticia.Descricao)" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">@Html.DisplayFor(c=>noticia.Titulo)</h5>
+							</div>
+						</div>
+					</div>
+				</a>
+			}
+		</div>
+	</div>
+</div>
